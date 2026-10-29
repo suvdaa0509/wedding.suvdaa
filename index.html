@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Хуримын Урилга - Бат-Ирээдүй & Сумъяа</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="curtain-wrapper" id="curtainWrapper">
+    <div class="curtain left-curtain"></div>
+    <div class="curtain right-curtain"></div>
+    
+    <div class="curtain-content" id="curtainContent">
+      <div class="monogram">B & S</div>
+      <p class="curtain-sub">ХУРИМЫН УРИЛГА</p>
+      <button class="btn-open" id="openBtn">✨ Урилга нээх ✨</button>
+    </div>
+  </div>
+  <div class="petals-container" id="petalsContainer"></div>
+
+  <button class="music-toggle" id="musicToggle" aria-label="Music">
+    🎵
+  </button>
+  <audio id="bgMusic" loop src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf756.mp3?filename=romantic-wedding-piano-112173.mp3"></audio>
+
+  <!-- Main Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <span class="sub-title">WE ARE GETTING MARRIED</span>
+      <h1 class="couple-names">Бат-Ирээдүй & Сумъяа</h1>
+      <p class="tagline">Хоёр зүрх нэгэн голдиролд нийлж, амьдралын шинэ хуудсыг эхлүүлж буй баярт мөчийг бидэнтэй хамт хуваалцаарай.</p>
+      <div class="date-badge">2026.10.20</div>
+    </div>
+  </header>
+  <main class="container">
+    
+    <section class="card scroll-reveal">
+      <h2>Баярт мөч эхлэхэд:</h2>
+      <div class="countdown" id="countdown">
+        <div class="time-box"><span id="days">00</span><small>Өдөр</small></div>
+        <div class="time-box"><span id="hours">00</span><small>Цаг</small></div>
+        <div class="time-box"><span id="minutes">00</span><small>Минут</small></div>
+        <div class="time-box"><span id="seconds">00</span><small>Секунд</small></div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="card scroll-reveal">
+      <h2>Бидний дурсамж</h2>
+      <div class="gallery">
+        <div class="photo-card">
+          <img src="a6ad2847-00ac-469b-8e1e-893c86ead94d.jpeg" alt="Gallery 1" />
+        </div>
+        <div class="photo-card">
+          <img src="c3273c9d-4eb3-4a02-aa5d-1299ea0e316a.jpeg" alt="Gallery 2" />
+        </div>
+        <div class="photo-card">
+          <img src="ebbb4974-ce14-4361-a911-ad004b6d049b.jpeg" alt="Gallery 3" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Timeline & Map -->
+    <section class="card scroll-reveal">
+      <h2>Хөтөлбөр & Байршил</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="time">15:00</span>
+          <p>Зочид хүлээн авах, улаан замын угталт</p>
+        </div>
+        <div class="timeline-item">
+          <span class="time">16:00</span>
+          <p>Бөгж солилцох баталгаажуулах ёслол</p>
+        </div>
+        <div class="timeline-item">
+          <span class="time">17:30</span>
+          <p>Хүндэтгэлийн зоог, Соёл урлагийн хөтөлбөр</p>
+        </div>
+      </div>
+      
+      <div class="location-box">
+        <p><strong>Байршил:</strong> Shangri-La Grand Ballroom, Улаанбаатар</p>
+        <a href="https://maps.google.com" target="_blank" class="btn-map">🗺️ Зам заалгах (Google Maps)</a>
+      </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="card scroll-reveal">
+      <h2>Ирц баталгаажуулах</h2>
+      <p class="rsvp-desc">Та хүрэлцэн ирэх эсэхээ доорх формоор дамжуулан бидэнд мэдэгдэнэ үү.</p>
+      
+      <form id="rsvpForm" class="rsvp-form">
+        <input type="text" placeholder="Таны нэр" required />
+        <select required>
+          <option value="" disabled selected>Хүрэлцэн ирэх эсэх</option>
+          <option value="yes">Очиж оролцоно ✨</option>
+          <option value="no">Амжихгүй 💔</option>
+        </select>
+        <button type="submit" class="btn-submit">Илгээх</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Бидэнтэй хамт баяр баясгаланг хуваалцах танд баярлалаа ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
